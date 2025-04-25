@@ -203,7 +203,12 @@ function CategorySection() {
         </div>
         <Swiper
           modules={[Navigation]}
-          slidesPerView={3}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
           spaceBetween={24}
           navigation
           className="pb-8"
